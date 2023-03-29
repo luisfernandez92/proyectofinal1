@@ -257,6 +257,11 @@ h1, h2, h3 {
     background-image: url(producto6.jpg);
 }
 
+.imagen-categoria:hover {
+    transform: scale(1.09);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 /*Media Query*/
 
 @media screen and  (max-width: 768px) {
@@ -315,9 +320,6 @@ h1, h2, h3 {
         width: 80%;
         margin: 0 auto;
     }
-    .categoria {
-        width: 30%;
-    }
 
     .imagen-categoria {
         background-size: cover;
@@ -331,11 +333,19 @@ h1, h2, h3 {
         flex-direction: column;
     }
 
+    .categorias-seccion {
+        width: 80%;
+        margin: 0 auto;
+    }
     .categoria {
         width: 100%;
         overflow: hidden;
+        margin-bottom: 50px;
     }
 
+    .detalle-categoria {
+        font-size: 1.1em;
+    }
 }
 
 /** Reescribir colores */
